@@ -1,0 +1,59 @@
+defaults:
+  - _self_
+  - model: flan-t5-base
+
+train:
+  neg_ratio: 0.2
+  num_candidates: 5
+  max_context_len: 512
+  per_device_train_batch_size: 8
+  per_device_eval_batch_size: 32
+  learning_rate: 5e-5
+  epoch: 5
+  num_gpus: 1
+  bf16: True
+  tf32: True
+  optim: adamw_torch
+  gradient_accumulation_steps: 1
+  fsdp_policy: "full_shard auto_wrap"
+  fsdp: False
+  resume_from_checkpoint: False
+
+self_map:
+  generation: False
+  memory_simplification: False
+  memory_refinement: False
+  multifaceted_matching: False
+
+knn:
+  top_k: 3
+  sort_by: relevance
+
+seed: 123
+
+openai:
+  rate_limit: 40
+  model: gpt-3.5-turbo-1106
+  display_cost: False
+
+data:
+  data_path: $(DATA_PATH)
+  train_split_file: data/train/*.json
+  test_split_files:
+    test_task: data/test_task/*.json
+    test_website: data/test_website/*.json
+    test_subdomain: data/test_subdomain/*.json
+  score_file: data/scores_all_data.pkl
+
+run_id: "full"
+
+model:
+  tokenizer_name: ""
+  arch: seq2seq
+
+hydra:
+  run:
+    dir: $(LOG_PATH)
+  job:
+    chdir: False
+  verbose: INFO
