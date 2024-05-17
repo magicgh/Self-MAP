@@ -104,3 +104,13 @@ Set *self_map.${generation, memory_simplification, memory_refinement, multifacet
 ## LICENSE
 Our code is derived from the [Mind2Web](https://github.com/OSU-NLP-Group/Mind2Web/) project under the MIT License.  
 Our MT-Mind2Web dataset is made available under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
+
+## Citation
+```
+@article{deng2024multi,
+  title={On the Multi-turn Instruction Following for Conversational Web Agents},
+  author={Deng, Yang and Zhang, Xuan and Zhang, Wenxuan and Yuan, Yifei and Ng, See-Kiong and Chua, Tat-Seng},
+  journal={arXiv preprint arXiv:2402.15057},
+  year={2024}
+}
+```
