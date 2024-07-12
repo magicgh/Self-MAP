@@ -107,10 +107,10 @@ Our MT-Mind2Web dataset is made available under the [CC-BY-4.0](https://creative
 
 ## Citation
 ```
-@article{deng2024multi,
-  title={On the Multi-turn Instruction Following for Conversational Web Agents},
-  author={Deng, Yang and Zhang, Xuan and Zhang, Wenxuan and Yuan, Yifei and Ng, See-Kiong and Chua, Tat-Seng},
-  journal={arXiv preprint arXiv:2402.15057},
-  year={2024}
+@inproceedings{self-map,
+    author = {Deng, Yang and Zhang, Xuan and Zhang, Wenxuan and Yuan, Yifei and Ng, See-Kiong and Chua, Tat-Seng},
+    booktitle = {ACL 2024},
+    title = {On the Multi-turn Instruction Following for Conversational Web Agents},
+    year = {2024}
 }
 ```
