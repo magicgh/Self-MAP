@@ -3,7 +3,7 @@
 <p align="center">
   <img src="./static/method.png" alt="Self-MAP-Overview" width="400"/> <!-- Adjust the width as needed -->
   <br>
-  Official Implementation of <em>On the Multi-turn Instruction Following for Conversational Web Agents</em> (<a href="https://arxiv.org/abs/2402.15057">Paper</a>, <a href="https://huggingface.co/datasets/magicgh/MT-Mind2Web">Datasets</a>)
+  Official Implementation of <em>On the Multi-turn Instruction Following for Conversational Web Agents</em> (<a href="https://aclanthology.org/2024.acl-long.477.pdf">Paper</a>, <a href="https://huggingface.co/datasets/magicgh/MT-Mind2Web">Datasets</a>)
 </p>
 
 
@@ -109,8 +109,13 @@ Our MT-Mind2Web dataset is made available under the [CC-BY-4.0](https://creative
 ```
 @inproceedings{self-map,
     author = {Deng, Yang and Zhang, Xuan and Zhang, Wenxuan and Yuan, Yifei and Ng, See-Kiong and Chua, Tat-Seng},
-    booktitle = {ACL 2024},
+    booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+    doi = {10.18653/v1/2024.acl-long.477},
+    editor = {Ku, Lun-Wei  and  Martins, Andre  and  Srikumar, Vivek},
+    pages = {8795--8812},
+    publisher = {Association for Computational Linguistics},
     title = {On the Multi-turn Instruction Following for Conversational Web Agents},
+    url = {https://aclanthology.org/2024.acl-long.477},
     year = {2024}
 }
 ```
